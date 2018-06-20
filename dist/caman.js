@@ -163,12 +163,7 @@
 
   if (typeof exports !== "undefined" && exports !== null) {
     Root = exports;
-    Canvas = null;
-    try {
-      Caman = require('canvas');
-    } catch (error) {
-      Caman = require('canvas-prebuilt');
-    }
+    Canvas = require('canvas-prebuilt');
     Image = Canvas.Image;
     Fiber = require('fibers');
     fs = require('fs');

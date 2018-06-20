@@ -1,11 +1,7 @@
 # NodeJS compatibility
 if exports?
   Root = exports
-  Canvas = null
-  try
-    Caman = require 'canvas'
-  catch
-    Caman = require 'canvas-prebuilt'
+  Canvas = require 'canvas-prebuilt'
   Image = Canvas.Image
 
   Fiber = require 'fibers'
